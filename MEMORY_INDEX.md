@@ -4,7 +4,7 @@
 
 - Project: `ahlimosa-gif/Warp-Core-LCARS`.
 - Date: 2026-06-14.
-- Status: local install verified; npm CLI metadata added.
+- Status: local install verified; npm CLI metadata added and pushed to GitHub `main`.
 
 ## Must Read
 
@@ -29,3 +29,4 @@
 - `test-router.js` is the working modern-system entrypoint.
 - `bin.warpcore` points to `./test-router.js`.
 - npm registry did not have a published `warp-core-lcars` package during local install verification.
+- GitHub `main` contains `package.json` and project memory files.

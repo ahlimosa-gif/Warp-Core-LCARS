@@ -2,8 +2,8 @@
 
 ## Current Priority
 
-1. Push `package.json` and project memory files to GitHub `main`.
-2. Read `package.json` back from GitHub after push to verify the remote update.
+1. Completed: `package.json` and project memory files are on GitHub `main`.
+2. Completed: `package.json`, `AGENTS.md`, and `NEXT_TASKS.md` were read back from GitHub for verification.
 
 ## Suggested Follow-Ups
 

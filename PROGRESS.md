@@ -19,3 +19,5 @@
 - Added `package.json`.
 - Bound the `warpcore` command to `./test-router.js` through `bin`.
 - Verified `package.json` parses and `bin.warpcore` matches the intended entrypoint.
+- Pushed `package.json` and project memory files to GitHub `main` in commit `0a5a70f7a67b3b0525bf4539d2729d50e3a301a3`.
+- Read `package.json`, `AGENTS.md`, and `NEXT_TASKS.md` back from GitHub to verify the remote update.
