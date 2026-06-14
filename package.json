@@ -1,0 +1,33 @@
+{
+  "name": "warp-core-lcars",
+  "version": "0.1.0",
+  "description": "Universal LCARS terminal interface wrapper for OS/2 Warp and modern Node.js environments.",
+  "main": "test-router.js",
+  "bin": {
+    "warpcore": "./test-router.js"
+  },
+  "scripts": {
+    "start": "node test-router.js",
+    "warpcore": "node test-router.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahlimosa-gif/Warp-Core-LCARS.git"
+  },
+  "keywords": [
+    "lcars",
+    "terminal",
+    "os2",
+    "warp",
+    "starfleet"
+  ],
+  "author": "ahlimosa-gif",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ahlimosa-gif/Warp-Core-LCARS/issues"
+  },
+  "homepage": "https://github.com/ahlimosa-gif/Warp-Core-LCARS#readme",
+  "engines": {
+    "node": ">=18"
+  }
+}
