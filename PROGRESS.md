@@ -29,3 +29,9 @@
 - Added local development install and direct `node test-router.js` usage.
 - Kept OS/2 Warp installation instructions and closed the Markdown code fence.
 - Verified Markdown code fences are balanced and `test-router.js` still runs with Node.js.
+
+### OS/2 REXX Cleanup
+
+- Removed Markdown wrapper text from `warpcore.cmd`.
+- Kept the REXX shell loop, LCARS ANSI output, `EXIT`/`LOGOFF` handling, and `EXIT 0`.
+- Verified `warpcore.cmd` starts with the REXX comment, contains no Markdown fence/title wrapper, and ends with `EXIT 0`.

@@ -27,4 +27,4 @@ This allows npm-style installs to create a `warpcore` command that runs the Node
 ## Known Constraints
 
 - The repository is intentionally small and does not currently include external dependencies.
-- `warpcore.cmd` currently contains Markdown wrapper text around the REXX example content.
+- `warpcore.cmd` is an OS/2 REXX file and should stay free of Markdown wrapper text.

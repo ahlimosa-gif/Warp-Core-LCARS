@@ -1,7 +1,3 @@
----
-
-### 📄 檔案 2：`warpcore.cmd` (OS/2 REXX 核心)
-```rexx
 /* REXX - Warp-Core-LCARS Terminal Environment for OS/2 */
 /* Ensure ANSI support is enabled in OS/2 session before running */
 ESC = '1B'x
