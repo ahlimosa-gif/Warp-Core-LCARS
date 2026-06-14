@@ -1,4 +1,4 @@
-# 🖖 Warp-Core-LCARS: The Universal Starfleet Interface
+# 🖖 「上古科幻」Warp Core LCARS: The Universal Starfleet Interface
 
 > "Computer, load OS/2 Warp VIO subsystem." 
 > The year is 1994, but your terminal is in the 24th Century.
