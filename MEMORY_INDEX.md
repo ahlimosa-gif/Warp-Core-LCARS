@@ -30,3 +30,4 @@
 - `bin.warpcore` points to `./test-router.js`.
 - npm registry did not have a published `warp-core-lcars` package during local install verification.
 - GitHub `main` contains `package.json` and project memory files.
+- README documents modern Node.js/GitHub install paths and the `warpcore` command.

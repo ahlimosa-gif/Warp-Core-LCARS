@@ -1,17 +1,17 @@
 # 🖖 「上古科幻」Warp Core LCARS: The Universal Starfleet Interface
 
-> "Computer, load OS/2 Warp VIO subsystem." 
+> "Computer, load OS/2 Warp VIO subsystem."
 > The year is 1994, but your terminal is in the 24th Century.
 
-**Warp-Core-LCARS** is an impossibly hardcore project that bridges the gap between IBM's legendary **OS/2 Warp** operating system, modern POSIX environments, and the **LCARS** (Library Computer Access/Retrieval System) interface from Star Trek. 
+**Warp-Core-LCARS** bridges IBM's legendary **OS/2 Warp** operating system, modern POSIX environments, and the **LCARS** (Library Computer Access/Retrieval System) interface from Star Trek.
 
-Written purely in **REXX** for native OS/2 compatibility, and utilizing **Node.js** for modern systems, this is not just a theme—it's a fully compatible command shell wrapper that runs natively across space and time.
+Written in **REXX** for native OS/2 compatibility and using **Node.js** for modern systems, this is a terminal shell wrapper that runs across space and time.
 
 ![Warp-Core-LCARS Terminal Demo](https://via.placeholder.com/800x400/000000/FF9900.png?text=LCARS+TERMINAL+OVERRIDE+ENGAGED)
 
 ## 🌌 Universal Operating System Compatibility
 
-Unlike ordinary terminal frameworks that restrict you to modern UNIX-like environments, **Warp-Core-LCARS** uses a proprietary Cross-Dimensional Polyglot Architecture™ (powered by Node.js for modern systems and native REXX for legacy systems). 
+Warp-Core-LCARS uses a Cross-Dimensional Polyglot Architecture™: Node.js for modern systems and native REXX for legacy OS/2 systems.
 
 | Operating System | Status | Subsystem / Engine |
 | :--- | :---: | :--- |
@@ -23,15 +23,56 @@ Unlike ordinary terminal frameworks that restrict you to modern UNIX-like enviro
 | **OS/2 Warp** (3.0 / 4.0 / ArcaOS) | ✅ | Native VIO & REXX Scripts 💾 |
 | **Windows** (WSL2 / PowerShell) | ✅ | Node.js Universal CLI |
 
-### 🧠 How is this possible?
-Our installation script dynamically probes your kernel. 
-* If it detects a modern POSIX or Windows environment, it compiles a lightweight Node.js wrapper that hooks into Zsh/Bash/PowerShell, rendering the LCARS interface via modern ANSI escape sequences.
-* If it detects an `IBM OS/2` kernel, it bypasses the modern stack entirely and drops directly into our hand-crafted, hardware-level REXX scripts via the `cmd.exe` VIO subsystem.
+## 📦 Installation for Modern Systems
 
-## 📦 Installation (The 1990s Way for OS/2)
+Requirements:
+
+- Node.js 18 or newer
+- A terminal with ANSI color support
+
+Install directly from GitHub:
+
+```bash
+npm install -g https://github.com/ahlimosa-gif/Warp-Core-LCARS/archive/refs/heads/main.tar.gz
+```
+
+Run the LCARS terminal renderer:
+
+```bash
+warpcore
+```
+
+## 🛠️ Local Development Install
+
+Clone the repository, install the CLI globally from the working tree, then run it:
+
+```bash
+git clone https://github.com/ahlimosa-gif/Warp-Core-LCARS.git
+cd Warp-Core-LCARS
+npm install -g .
+warpcore
+```
+
+You can also run the entrypoint without installing the CLI:
+
+```bash
+node test-router.js
+npm start
+```
+
+## 💾 Installation for OS/2 Warp
+
 1. Download the `WARPCORE.ZIP` release file.
-2. Unzip into your HPFS drive (e.g., `C:\LCARS`).
+2. Unzip into your HPFS drive, for example `C:\LCARS`.
 3. Open your OS/2 Warp command prompt and run:
-   ```cmd
-   [C:\] cd LCARS
-   [C:\LCARS] pmrexx install.cmd
+
+```cmd
+[C:\] cd LCARS
+[C:\LCARS] pmrexx install.cmd
+```
+
+## 🧠 How It Works
+
+- Modern POSIX and Windows environments run `test-router.js` through Node.js.
+- The npm `bin` field exposes `test-router.js` as the `warpcore` command.
+- OS/2 systems can use the REXX-oriented `install.cmd` and `warpcore.cmd` path.

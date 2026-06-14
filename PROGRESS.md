@@ -21,3 +21,11 @@
 - Verified `package.json` parses and `bin.warpcore` matches the intended entrypoint.
 - Pushed `package.json` and project memory files to GitHub `main` in commit `0a5a70f7a67b3b0525bf4539d2729d50e3a301a3`.
 - Read `package.json`, `AGENTS.md`, and `NEXT_TASKS.md` back from GitHub to verify the remote update.
+
+### README
+
+- Updated `README.md` with modern Node.js requirements.
+- Added GitHub tarball global install instructions.
+- Added local development install and direct `node test-router.js` usage.
+- Kept OS/2 Warp installation instructions and closed the Markdown code fence.
+- Verified Markdown code fences are balanced and `test-router.js` still runs with Node.js.
