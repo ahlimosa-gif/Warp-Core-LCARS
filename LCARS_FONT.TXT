@@ -1,0 +1,11 @@
+=========================================================
+LCARS FONT CONFIGURATION FOR OS/2 WARP VIO
+=========================================================
+
+To achieve 100% lore-accurate LCARS display in OS/2:
+1. Ensure ANSI support is ON. Open CONFIG.SYS and verify:
+   DEVICE=C:\OS2\MDOS\ANSI.SYS
+2. Open the OS/2 System Setup folder -> "Font Palette".
+3. Select a bold, sans-serif font (e.g., Swiss911).
+4. Drag and drop the font directly onto your running VIO Window 
+   running WARPCORE.CMD. Hold ALT while dropping to save.
