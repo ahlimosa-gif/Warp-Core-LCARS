@@ -60,6 +60,33 @@ node test-router.js
 npm start
 ```
 
+## ✅ Smoke Test
+
+Run the zero-dependency smoke test before packaging or publishing:
+
+```bash
+npm test
+```
+
+The smoke test verifies:
+
+- `package.json` exposes `warpcore` through `bin`.
+- `warpcore.cmd` contains only OS/2 REXX content, not Markdown wrapper text.
+- `test-router.js` starts and prints the LCARS terminal banner.
+
+## 🚀 npm Publishing
+
+This repository is prepared for npm publishing, but the package is not currently published to the registry.
+
+Before publishing, run:
+
+```bash
+npm test
+npm run pack:dry-run
+```
+
+See [PUBLISHING.md](PUBLISHING.md) for the release checklist, 2FA notes, and versioning steps.
+
 ## 💾 Installation for OS/2 Warp
 
 1. Download the `WARPCORE.ZIP` release file.

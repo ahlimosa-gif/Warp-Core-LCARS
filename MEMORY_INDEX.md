@@ -32,3 +32,4 @@
 - GitHub `main` contains `package.json` and project memory files.
 - README documents modern Node.js/GitHub install paths and the `warpcore` command.
 - `warpcore.cmd` has been cleaned so it contains only OS/2 REXX content.
+- npm publishing docs and a zero-dependency smoke test are in place.

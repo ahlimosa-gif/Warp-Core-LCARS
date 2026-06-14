@@ -35,3 +35,13 @@
 - Removed Markdown wrapper text from `warpcore.cmd`.
 - Kept the REXX shell loop, LCARS ANSI output, `EXIT`/`LOGOFF` handling, and `EXIT 0`.
 - Verified `warpcore.cmd` starts with the REXX comment, contains no Markdown fence/title wrapper, and ends with `EXIT 0`.
+
+### npm Publish Readiness
+
+- Added `scripts/smoke-test.js`.
+- Added `PUBLISHING.md` with npm login, 2FA, preflight, versioning, and publish steps.
+- Added `test`, `smoke`, `pack:dry-run`, and `prepublishOnly` scripts to `package.json`.
+- Added a package `files` allowlist and `publishConfig.access`.
+- Updated `README.md` with smoke test and npm publishing sections.
+- Verified the smoke test with Node.js in the source tree and local install output.
+- `npm --version` could not run in the current Windows environment because npm is not on `PATH`.

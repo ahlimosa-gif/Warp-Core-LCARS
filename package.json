@@ -8,7 +8,22 @@
   },
   "scripts": {
     "start": "node test-router.js",
-    "warpcore": "node test-router.js"
+    "warpcore": "node test-router.js",
+    "smoke": "node scripts/smoke-test.js",
+    "test": "node scripts/smoke-test.js",
+    "pack:dry-run": "npm pack --dry-run",
+    "prepublishOnly": "npm test && npm run pack:dry-run"
+  },
+  "files": [
+    "LCARS_FONT.TXT",
+    "Node.js",
+    "install.cmd",
+    "scripts/",
+    "test-router.js",
+    "warpcore.cmd"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
