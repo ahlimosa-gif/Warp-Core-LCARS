@@ -37,6 +37,13 @@ assert.ok(rexxScript.trimEnd().endsWith("EXIT 0"), "warpcore.cmd should end with
 const readme = readText("README.md");
 assertIncludes(readme, "npm install -g https://github.com/ahlimosa-gif/Warp-Core-LCARS/archive/refs/heads/main.tar.gz", "README");
 assertIncludes(readme, "warpcore", "README");
+assertIncludes(readme, "assets/warp-core-lcars-hero.svg", "README");
+
+const heroImage = fs.statSync(path.join(rootDir, "assets", "warp-core-lcars-hero.svg"));
+assert.ok(heroImage.size > 5_000, "README hero image should exist and be a real SVG asset");
+const heroMarkup = readText("assets/warp-core-lcars-hero.svg");
+assert.ok(heroMarkup.startsWith("<svg"), "README hero should be an SVG");
+assertIncludes(heroMarkup, "WARP CORE LCARS", "README hero SVG");
 
 const run = spawnSync(process.execPath, [path.join(rootDir, "test-router.js")], {
   cwd: rootDir,

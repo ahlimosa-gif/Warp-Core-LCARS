@@ -30,6 +30,7 @@ The package `files` allowlist keeps the npm tarball focused on runtime files:
 - `install.cmd`
 - `LCARS_FONT.TXT`
 - `Node.js`
+- `assets/`
 - `scripts/`
 
 `package.json`, `README.md`, and license metadata are handled by npm package rules.

@@ -33,3 +33,4 @@
 - README documents modern Node.js/GitHub install paths and the `warpcore` command.
 - `warpcore.cmd` has been cleaned so it contains only OS/2 REXX content.
 - npm publishing docs and a zero-dependency smoke test are in place.
+- README uses the repository-local image `assets/warp-core-lcars-hero.svg`.

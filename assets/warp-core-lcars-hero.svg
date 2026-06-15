@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Warp-Core-LCARS README hero</title>
+  <desc id="desc">A cinematic LCARS terminal interface over a glowing warp-core engine room.</desc>
+  <defs>
+    <radialGradient id="coreGlow" cx="50%" cy="55%" r="45%">
+      <stop offset="0%" stop-color="#ffd27a" stop-opacity="0.95"/>
+      <stop offset="28%" stop-color="#ff9b2f" stop-opacity="0.72"/>
+      <stop offset="55%" stop-color="#0cc7ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#02040b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="space" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#02030a"/>
+      <stop offset="45%" stop-color="#070916"/>
+      <stop offset="100%" stop-color="#130718"/>
+    </linearGradient>
+    <linearGradient id="panelAmber" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f3a23d"/>
+      <stop offset="56%" stop-color="#ffbd62"/>
+      <stop offset="100%" stop-color="#ff7a3d"/>
+    </linearGradient>
+    <linearGradient id="panelViolet" x1="0" x2="1">
+      <stop offset="0%" stop-color="#8e6fe0"/>
+      <stop offset="100%" stop-color="#bda0ff"/>
+    </linearGradient>
+    <linearGradient id="panelPeach" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffb08e"/>
+      <stop offset="100%" stop-color="#ff7f6f"/>
+    </linearGradient>
+    <linearGradient id="panelBlue" x1="0" x2="1">
+      <stop offset="0%" stop-color="#86b8ff"/>
+      <stop offset="100%" stop-color="#5977c8"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="panelShadow" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.58"/>
+    </filter>
+    <pattern id="stars" width="160" height="120" patternUnits="userSpaceOnUse">
+      <circle cx="22" cy="28" r="1.4" fill="#d8ecff" opacity="0.75"/>
+      <circle cx="96" cy="36" r="1" fill="#ffffff" opacity="0.55"/>
+      <circle cx="138" cy="82" r="1.7" fill="#9fc7ff" opacity="0.48"/>
+      <circle cx="52" cy="101" r="1.1" fill="#c7b5ff" opacity="0.65"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#space)"/>
+  <rect width="1600" height="900" fill="url(#stars)" opacity="0.72"/>
+  <rect width="1600" height="900" fill="url(#coreGlow)"/>
+
+  <g opacity="0.72">
+    <path d="M0 205h250c48 0 86 38 86 86v318c0 48-38 86-86 86H0v-56h225c19 0 35-16 35-35V296c0-19-16-35-35-35H0z" fill="#07111f" stroke="#23436f" stroke-width="6"/>
+    <path d="M1600 205h-250c-48 0-86 38-86 86v318c0 48 38 86 86 86h250v-56h-225c-19 0-35-16-35-35V296c0-19 16-35 35-35h225z" fill="#07111f" stroke="#23436f" stroke-width="6"/>
+  </g>
+
+  <g filter="url(#softGlow)">
+    <rect x="738" y="96" width="124" height="708" rx="48" fill="#ff9c28" opacity="0.16"/>
+    <rect x="766" y="112" width="68" height="674" rx="34" fill="#ffb141" opacity="0.48"/>
+    <rect x="790" y="120" width="20" height="660" rx="10" fill="#ffe08c" opacity="0.88"/>
+    <path d="M662 150h276" stroke="#ffac3e" stroke-width="22" stroke-linecap="round" opacity="0.72"/>
+    <path d="M635 746h330" stroke="#ffac3e" stroke-width="22" stroke-linecap="round" opacity="0.62"/>
+  </g>
+
+  <g opacity="0.78">
+    <path d="M0 505h255" stroke="#31c7ff" stroke-width="18" stroke-linecap="round" filter="url(#softGlow)"/>
+    <path d="M1345 505h255" stroke="#ff9c28" stroke-width="18" stroke-linecap="round" filter="url(#softGlow)"/>
+    <path d="M0 530h255" stroke="#3159ff" stroke-width="5" stroke-linecap="round"/>
+    <path d="M1345 530h255" stroke="#ff6d31" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#panelShadow)">
+    <rect x="140" y="145" width="1320" height="610" rx="58" fill="#03050a" stroke="#111827" stroke-width="10"/>
+    <rect x="180" y="184" width="1240" height="532" rx="42" fill="#090b10" stroke="#241513" stroke-width="4"/>
+
+    <rect x="186" y="172" width="545" height="74" rx="35" fill="url(#panelAmber)"/>
+    <rect x="746" y="172" width="360" height="74" rx="18" fill="#ff873f"/>
+    <rect x="1120" y="172" width="292" height="74" rx="18" fill="#f4773f"/>
+
+    <path d="M308 282q0-58 58-58h210" fill="none" stroke="#f5a7b9" stroke-width="52" stroke-linecap="round"/>
+    <path d="M588 224h116" stroke="#c3935e" stroke-width="14" stroke-linecap="round"/>
+    <path d="M724 224h96" stroke="#f5a65a" stroke-width="14" stroke-linecap="round"/>
+    <path d="M840 224h354" stroke="#bd8259" stroke-width="14" stroke-linecap="round"/>
+    <path d="M1260 224h88q58 0 58 58v72" fill="none" stroke="#f69a91" stroke-width="52" stroke-linecap="round"/>
+
+    <rect x="314" y="262" width="972" height="318" rx="34" fill="#020307" stroke="#2c1715" stroke-width="4"/>
+    <rect x="336" y="286" width="928" height="270" rx="24" fill="#000" opacity="0.82"/>
+    <path d="M502 284h598" stroke="#0dd5ff" stroke-width="3" opacity="0.56" filter="url(#softGlow)"/>
+    <path d="M522 584h556" stroke="#ff9e38" stroke-width="3" opacity="0.5" filter="url(#softGlow)"/>
+
+    <g>
+      <rect x="186" y="260" width="116" height="70" rx="12" fill="url(#panelViolet)"/>
+      <rect x="186" y="344" width="154" height="34" rx="17" fill="url(#panelViolet)"/>
+      <rect x="186" y="390" width="74" height="36" rx="18" fill="#ff8552"/>
+      <rect x="266" y="390" width="74" height="36" rx="18" fill="#ffba53"/>
+      <rect x="186" y="438" width="74" height="36" rx="18" fill="#e48a8b"/>
+      <rect x="266" y="438" width="74" height="36" rx="18" fill="#ef9186"/>
+      <rect x="186" y="486" width="74" height="36" rx="18" fill="#8e6fe0"/>
+      <rect x="266" y="486" width="74" height="36" rx="18" fill="#8fb5ff"/>
+      <rect x="186" y="535" width="166" height="18" rx="9" fill="#b57b3d"/>
+      <path d="M186 604q0-52 52-52h88v114H186z" fill="#f28a42"/>
+      <path d="M338 552h58v114h-58z" fill="#e68f84"/>
+      <path d="M288 666h292v50H235q-49 0-49-49V552h52v64q0 50 50 50z" fill="url(#panelBlue)"/>
+    </g>
+
+    <g>
+      <rect x="1252" y="260" width="42" height="70" rx="12" fill="url(#panelViolet)"/>
+      <rect x="1310" y="247" width="52" height="44" rx="9" fill="#a37be3"/>
+      <rect x="1310" y="300" width="52" height="58" rx="10" fill="#9a72de"/>
+      <path d="M1252 360h118q42 0 42 42v86q0 42-42 42h-118z" fill="#8668d5"/>
+      <rect x="1252" y="546" width="42" height="62" rx="12" fill="#8fb5ff"/>
+      <rect x="1252" y="622" width="42" height="56" rx="12" fill="#f5853a"/>
+      <rect x="1310" y="544" width="102" height="118" rx="20" fill="#f28c2e"/>
+      <path d="M1310 662h102v54h-102z" fill="#82a9e8"/>
+    </g>
+
+    <g>
+      <rect x="590" y="674" width="94" height="42" rx="11" fill="#6f8ed7"/>
+      <rect x="698" y="652" width="116" height="64" rx="14" fill="#dd8079"/>
+      <rect x="832" y="652" width="272" height="64" rx="14" fill="#a684df"/>
+      <rect x="1130" y="660" width="44" height="48" rx="11" fill="#ff8d36"/>
+      <rect x="1188" y="660" width="44" height="48" rx="11" fill="#e99137"/>
+      <rect x="1246" y="660" width="44" height="48" rx="11" fill="#a47add"/>
+      <rect x="1304" y="660" width="44" height="48" rx="11" fill="#f28c37"/>
+      <rect x="1362" y="660" width="44" height="48" rx="11" fill="#80a6ef"/>
+    </g>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" letter-spacing="0" text-rendering="geometricPrecision">
+    <text x="800" y="395" text-anchor="middle" fill="#ffb24c" font-size="42" font-weight="700">WARP CORE LCARS</text>
+    <text x="800" y="447" text-anchor="middle" fill="#94e8ff" font-size="24" font-weight="600">TERMINAL OVERRIDE ENGAGED</text>
+    <text x="800" y="492" text-anchor="middle" fill="#ffe0b0" font-size="18">Node.js universal CLI • OS/2 REXX subsystem</text>
+  </g>
+
+  <rect x="0" y="0" width="1600" height="900" fill="none" stroke="#000" stroke-opacity="0.5" stroke-width="18"/>
+</svg>

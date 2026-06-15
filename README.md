@@ -7,7 +7,7 @@
 
 Written in **REXX** for native OS/2 compatibility and using **Node.js** for modern systems, this is a terminal shell wrapper that runs across space and time.
 
-![Warp-Core-LCARS Terminal Demo](https://via.placeholder.com/800x400/000000/FF9900.png?text=LCARS+TERMINAL+OVERRIDE+ENGAGED)
+![Warp-Core-LCARS LCARS terminal hero](assets/warp-core-lcars-hero.svg)
 
 ## 🌌 Universal Operating System Compatibility
 

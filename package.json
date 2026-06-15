@@ -15,6 +15,7 @@
     "prepublishOnly": "npm test && npm run pack:dry-run"
   },
   "files": [
+    "assets/",
     "LCARS_FONT.TXT",
     "Node.js",
     "install.cmd",

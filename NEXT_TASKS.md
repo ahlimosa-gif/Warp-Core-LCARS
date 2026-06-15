@@ -7,6 +7,7 @@
 3. Completed: `README.md` documents the modern Node.js/GitHub install path and `warpcore` usage.
 4. Completed: `warpcore.cmd` no longer contains Markdown wrapper text.
 5. Completed: npm publishing docs and smoke test are in place.
+6. Completed: README uses a repository-local LCARS hero image.
 
 ## Suggested Follow-Ups
 

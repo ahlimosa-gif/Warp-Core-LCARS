@@ -45,3 +45,11 @@
 - Updated `README.md` with smoke test and npm publishing sections.
 - Verified the smoke test with Node.js in the source tree and local install output.
 - `npm --version` could not run in the current Windows environment because npm is not on `PATH`.
+
+### README Image
+
+- Generated a new LCARS/warp-core README hero image.
+- Saved it as `assets/warp-core-lcars-hero.svg`.
+- Replaced the external placeholder README image with the repository-local asset.
+- Added `assets/` to the npm `files` allowlist.
+- Updated the smoke test to verify the README image reference and local SVG asset.
